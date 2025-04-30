@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Ícone da aba do navegador -->
+  <link rel="shortcut icon" href="src/imagens/icone/logo-sonic-shadow.png" type="image/x-icon" />
+
+  <!-- Fonte personalizada -->
+  <link href="https://fonts.cdnfonts.com/css/chalet" rel="stylesheet" />
+
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="./src/css/style.css" />
+  <link rel="stylesheet" href="./src/css/responsividade.css" />
+
+  <!-- Título da página -->
+  <title>Sonic x Shadow Generations</title>
+</head>
+
+<body>
+  <!-- Cabeçalho da página -->
+  <header class="cabecalho">
+    <div class="logo">
+      <!-- Logos principais -->
+      <img src="./src/imagens/icone/logo-sega.svg" alt="Logo SEGA" />
+      <hr />
+      <img src="./src/imagens/icone/logo-sonic-shadow-generations.svg" alt="Logo Sonic x Shadow Generations" />
+    </div>
+
+    <!-- Menu de navegação -->
+    <nav>
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#comprar">Comprar</a></li>
+        <li>
+          <a href="https://support.sega.com/" target="_blank">
+            Suporte
+            <img src="./src/imagens/icone/logo-suporte.svg" alt="Ícone de link de suporte" />
+          </a>
+        </li>
+        <!-- Botão de troca de tema -->
+        <button id="toggle-theme">
+          <img id="icone-tema" src="./src/imagens/icone/logo-sonic.png" alt="Ícone de tema" />
+        </button>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main class="home" id="home">
+    <!-- Imagem de fundo -->
+    <img class="imagem-fundo" src="./src/imagens/wallpaper/sonix-shadow.png" alt="Sonic e Shadow correndo juntos com cenário vibrante ao fundo" />
+
+    <!-- Informações principais -->
+    <div class="informacoes">
+      <div class="lista-de-jogos">
+        <img src="./src/imagens/jogo/jogo-sonic-shadow-generations.png" alt="Logo do jogo Sonic x Shadow Generations" />
+        <img src="./src/imagens/jogo/jogo-sonic-frontiers.png" alt="Logo do jogo Sonic Frontiers" />
+      </div>
+
+      <h1 class="titulo">Já disponíveis para PlayStation 5, Xbox Series X|S e Nintendo Switch</h1>
+      <p class="texto">
+        Mergulhe no universo épico de Sonic e Shadow, enfrentando novos desafios e inimigos em uma aventura nunca vista antes!
+      </p>
+
+      <!-- Botão de compra -->
+      <a class="btn-comprar" href="#comprar">Compre agora</a>
+    </div>
+  </main>
+
+  <!-- Sessão de compra -->
+  <section class="compre-agora" id="comprar">
+    <h2 class="titulo">Compre agora</h2>
+
+    <!-- Cartão de venda do jogo -->
+    <div class="cartao">
+      <!-- Capa do jogo -->
+      <img class="capa-do-jogo" src="./src/imagens/jogo/jogo-sonic-shadow-generations-poster.png" alt="Capa do jogo Sonic x Shadow Generations" />
+
+      <!-- Informações do produto -->
+      <div class="informacoes">
+        <h3>Sonic x Shadow Generations</h3>
+        <p>
+          Inclui <strong>aventura cooperativa de Sonic e Shadow</strong> e <strong>conteúdos extras digitais</strong>
+        </p>
+
+        <!-- Logos das plataformas (visuais) -->
+        <ul class="plataformas">
+          <li><img src="./src/imagens/icone/logo-ps5.svg" alt="Logo Playstation 5" /></li>
+          <li><img src="./src/imagens/icone/logo-ps4.svg" alt="Logo Playstation 4" /></li>
+          <li><img src="./src/imagens/icone/logo-xbox-series-s.svg" alt="Logo Xbox Series X|S" /></li>
+          <li><img src="./src/imagens/icone/logo-nintendo-switch.webp" alt="Logo Nintendo Switch" /></li>
+        </ul>
+
+        <!-- Botão de seleção de plataforma com links -->
+        <div class="btn-plataforma">
+          <span>Selecione a plataforma</span>
+          <ul class="plataformas">
+            <li>
+              <a href="https://store.playstation.com/pt-br/search/sonic%20shadow%20generations" target="_blank">
+                <img src="./src/imagens/icone/logo-ps5.svg" alt="Logo Playstation 5" />
+              </a>
+            </li>
+            <li>
+              <a href="https://store.playstation.com/pt-br/search/sonic%20shadow%20generations" target="_blank">
+                <img src="./src/imagens/icone/logo-ps4.svg" alt="Logo Playstation 4" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.xbox.com/pt-BR/search?q=sonic+shadow+generations" target="_blank">
+                <img src="./src/imagens/icone/logo-xbox-series-s.svg" alt="Logo Xbox Series X|S" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.nintendo.com/pt-br/search/?q=sonic+shadow+generations" target="_blank">
+                <img src="./src/imagens/icone/logo-nintendo-switch.webp" alt="Logo Nintendo Switch" />
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Observação (opcional) -->
+        <p style="font-size: 0.9rem; color: #888; margin-top: 10px;">
+          *Disponível também para Xbox One. Pode haver diferenças gráficas e de desempenho.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Componente do Anel do Sonic (Clicável) -->
+  <div id="sonic-ring" class="sonic-ring">
+    <!-- Ícone do anel visível para clique -->
+    <img src="src/imagens/icone/sonic-ring.gif" alt="Anel do Sonic" />
+
+    <!-- Anéis que aparecem como efeito ao clicar -->
+    <div id="ring" class="ring" style="display: none;">
+      <img src="src/imagens/icone/sonic-ring.gif" alt="Efeito do anel" />
+      <img src="src/imagens/icone/sonic-ring.gif" alt="Efeito do anel" />
+      <img src="src/imagens/icone/sonic-ring.gif" alt="Efeito do anel" />
+    </div>
+
+    <!-- Som de coleta do anel -->
+    <audio id="sonic-ring-sound" src="src/imagens/sounds/sonic-ring-sound.mp3"></audio>
+  </div>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>
+      &copy; 2025
+      <a href="https://github.com/paulaPSOx" target="_blank" class="github-link">PaulaPSOx</a>.
+      Todos os direitos reservados.
+    </p>
+  </footer>
+
+  <!-- Script principal -->
+  <script src="./src/js/index.js"></script>
+</body>
+
+</html>
